@@ -17,10 +17,13 @@
 }
 .project-card {
     background: #1a1919;
-    min-width: 300px;
-    flex-basis: 33%;
-    margin: 20px;
-    padding: 1.2rem 1rem;
+    align-self: normal;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
 }
 .project-card img {
     width: 100%;
@@ -32,18 +35,26 @@
 
 .pro-details p {
     padding-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 16px;
     text-align: justify;
+    margin: 10px 0;
 }
 
-.pro-btns {
+/* .pro-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem 0;
+} */
+.bxs-right-arrow-alt {
+    position: relative;
+    top: 3px;
+    font-size: 20px;
 }
 
-.pro-btns .btn {
-    padding: 0.5rem 1rem;
+.project-card .btn {
+    margin-top: auto;
+    padding: 10px 30px;
 }
 
 @media screen and (max-width: 740px) {
@@ -53,5 +64,9 @@
     /* max-width: 90%;
     margin: auto;
     grid-template-columns: 1fr; */
+}
+.project-card .btn{
+    font-size: 13px;
+    padding: 5px 20px;
 }
 }

@@ -9,13 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .content
 /* .profile-photo  */ {
   text-align: center;
-  min-width: 300px;
   flex-basis: 49%;
-  text-align: center;
 }
 /* .profile-photo img {
   border-bottom-right-radius: 30%;
@@ -41,7 +40,7 @@
 }
 .content .button {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     animation-name: moveUp;
     animation-duration: 1.3s;

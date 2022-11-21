@@ -10,6 +10,7 @@
   flex-basis: 60%;
   padding: 20px;
   color: #fff;
+  border: 1px solid #fff;
 }
 .contact-box-2 {
   padding: 20px;
@@ -39,6 +40,9 @@
 input:focus {
     outline: none;
 }
+textarea {
+  padding: 10px;
+}
 
 textarea,
 input {
@@ -60,22 +64,52 @@ form .btn {
 }
 .contact-us {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 40px;
 }
-.contact-us ion-icon {
-  flex-basis: 30%;
+.contact-us .fa {
+  flex-basis: 20%;
   font-size: 25px;
+  text-align: center;
 }
-.contact-us p {
+.contact-us a {
   flex-basis: 70%;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
+}
+.result {
+  animation-name: moveUp;
+    animation-duration: .7s;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 8px 10px;
+  }
+  .result p {
+  color: black;
+
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 @media screen and (max-width:1140px) {
     .contact-box {
     width: auto;
     flex-direction: column;
+  }
+  .result p{
+    font-size: 14px;
   }
 }

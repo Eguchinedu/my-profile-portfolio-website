@@ -1,7 +1,6 @@
 import "./WorkCard.css";
 
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const WorkCard = (props) => {
   return (
@@ -9,18 +8,17 @@ const WorkCard = (props) => {
       <img src={props.imgsrc} alt="projectimage" />
       <h2 className="project-title">{props.title}</h2>
       <div className="pro-details">
-        <p>
-          {props.text}
-        </p>
-        <div className="pro-btns">
-          <NavLink to={props.view} className="btn">
-            View
-          </NavLink>
-          <NavLink to="url.com" className="btn">
+        <p>{props.text}</p>
+        {/* <div className="pro-btns"> */}
+        {/* <NavLink to="url.com" className="btn">
             Source
-          </NavLink>
-        </div>
+          </NavLink> */}
+        {/* </div> */}
       </div>
+      {/* eslint-disable-next-line */}
+      <a href={props.view} className="btn" target="_blank">
+        View <i class="bx bxs-right-arrow-alt bx-fade-right-hover"></i>
+      </a>
     </div>
   );
 };

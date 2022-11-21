@@ -16,16 +16,16 @@ const HeroImg = () => {
               loop={Infinity}
               steps={[
                 "Frontend Dev 🧑‍💻",
-                2000,
+                1000,
                 "Website Developer 🌐",
-                2000,
+                1000,
                 "React.Js Dev 💻",
-                2000,
+                1000,
               ]}
             />{" "}
           </h2>
           <div className="button">
-            <Link to="/project" className="btn">
+            <Link to="/projects" className="btn">
               Projects
             </Link>
             <Link to="/contact" className="btn btn-light">

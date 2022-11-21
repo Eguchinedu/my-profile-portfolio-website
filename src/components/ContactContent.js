@@ -1,10 +1,18 @@
 import "./ContactContent.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+const Result = () => {
+  return (
+    <div className="result">
+      <p>Message sent successfully!. I will contact you shortly</p>
+    </div>
+  );
+}
 
 const ContactContent = () => {
 
+  const [result, setResult] = useState(false)
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -18,7 +26,13 @@ const ContactContent = () => {
         "scXz_iY6pe47Vxs66"
       )
       e.target.reset();
+      setResult(true);
   };
+
+  //hide result
+  setTimeout(() => {
+    setResult(false)
+  }, 3000);
   return (
     <div className="contact">
       <div className="container-2">
@@ -55,28 +69,43 @@ const ContactContent = () => {
                 ></textarea>
               </div>
               <div className="button">
-                <button className="btn">Submit</button>
+                <button className="btn">
+                  Send <i class="bx bxs-paper-plane"></i>
+                </button>
               </div>
+              <div>{result ? <Result /> : null}</div>
             </form>
           </div>
           <div className="contact-box-2">
-            <h3>Contact us here too</h3>
+            <h3>Feel Free to reach out here too</h3>
             <div className="address">
               <div className="contact-us">
-                <ion-icon name="map"></ion-icon>
-                <p>No 7, Ajayi Crowther road, Lagos, Nigeria.</p>
+                <i className="fa fa-linkedin"></i>
+                {/* eslint-disable-next-line */}
+                <a
+                  href="https://www.linkedin.com/in/egu-chinedu-282746193/"
+                  target="_blank"
+                >
+                  Egu Chinedu
+                </a>
               </div>
             </div>
             <div className="phone">
               <div className="contact-us">
-                <ion-icon name="call"></ion-icon>
-                <p>+234 814 021 6606</p>
+                <i className="fa fa-whatsapp"></i>
+                {/* eslint-disable-next-line */}
+                <a href="https://wa.me/+2348140216606" target="_blank">
+                  Send a whatsapp Message
+                </a>
               </div>
             </div>
             <div className="instagram">
               <div className="contact-us">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <p>Send us a DM on our Instagram</p>
+                <i className="fa fa-instagram"></i>
+                {/* eslint-disable-next-line */}
+                <a href="https://ig.me/m/zeus_egu/" target="_blank">
+                  Send me a DM on my Instagram
+                </a>
               </div>
             </div>
           </div>

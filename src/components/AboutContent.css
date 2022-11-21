@@ -25,6 +25,17 @@
     display: flex;
     justify-content: space-between;
 }
+.about-button .bx-file-blank{
+    font-weight: bold;
+}
+#icons {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.left a {
+    margin: 0px 4px;
+}
 
 
 @media screen and (max-width: 1112px){
@@ -39,6 +50,13 @@
 @media screen and (max-width: 740px){
     .left .btn {
         padding: 8px 10px;
+        font-size: 13px;
+    }
+    .left h1 {
+        font-size: 20px;
+    }
+    .left p {
+        font-size: 13px;
     }
     .right img {
         padding: 0;
