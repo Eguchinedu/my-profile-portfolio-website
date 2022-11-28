@@ -1,10 +1,15 @@
 import "./Skills.css";
-import React from "react";
+import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="skills-container">
-      <div className="skills-box">
+      <div className="skills-box" data-aos="fade-up">
         <div className="skills-title">
           <h2>Skills</h2>
           <p>My Technical Level</p>
@@ -54,6 +59,22 @@ const Skills = () => {
 
             <div className="skill-text">
               <h3 className="skills-name">Firebase</h3>
+              <p className="skills-level">Basic</p>
+            </div>
+          </div>
+          <div className="skills-group">
+            <i className="bx bxs-badge-check"></i>
+
+            <div className="skill-text">
+              <h3 className="skills-name">Typescript</h3>
+              <p className="skills-level">Basic</p>
+            </div>
+          </div>
+          <div className="skills-group">
+            <i className="bx bxs-badge-check"></i>
+
+            <div className="skill-text">
+              <h3 className="skills-name">React.Ts</h3>
               <p className="skills-level">Basic</p>
             </div>
           </div>

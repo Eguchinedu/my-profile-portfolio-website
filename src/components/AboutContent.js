@@ -1,13 +1,18 @@
 import './AboutContent.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import profilepic from '../assets/profile.jpg'
 
 const AboutContent = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="about">
-      <div className="left">
+      <div className="left" data-aos="fade-right">
         <div>
           {/* eslint-disable-next-line */}
           <a href="https://github.com/Eguchinedu" target="_blank">
@@ -45,7 +50,7 @@ const AboutContent = () => {
           </a>
         </div>
       </div>
-      <div className="right">
+      <div className="right" data-aos="fade-left">
         <img src={profilepic} alt="Profile" />
       </div>
     </div>

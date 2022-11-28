@@ -1,10 +1,18 @@
 import "./WorkCard.css";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 import React from "react";
 
 const WorkCard = (props) => {
+
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+  
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos="zoom-in">
       <img src={props.imgsrc} alt="projectimage" />
       <h2 className="project-title">{props.title}</h2>
       <div className="pro-details">
