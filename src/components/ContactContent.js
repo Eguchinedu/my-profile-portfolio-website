@@ -1,38 +1,42 @@
 import "./ContactContent.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+ import { ToastContainer, toast } from "react-toastify";
+ import "react-toastify/dist/ReactToastify.css";
 
-const Result = () => {
-  return (
-    <div className="result">
-      <p>Message sent successfully!. I will contact you shortly</p>
-    </div>
-  );
-}
+// const Result = () => {
+//   return (
+//     <div className="result">
+//       <p>Message sent successfully!. I will contact you shortly</p>
+//     </div>
+//   );
+// }
 
 const ContactContent = () => {
-
-  const [result, setResult] = useState(false)
+  // const notify = () => 
+  
+  const [setResult] = useState(false)
   const form = useRef();
-
+  
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
     emailjs
-      .sendForm(
-        "service_uzh745r",
-        "template_6rigvct",
-        form.current,
-        "scXz_iY6pe47Vxs66"
+    .sendForm(
+      "service_uzh745r",
+      "template_6rigvct",
+      form.current,
+      "scXz_iY6pe47Vxs66"
       )
+      toast.success("Message Sent!", {autoClose: 2000});
       e.target.reset();
       setResult(true);
   };
 
   //hide result
-  setTimeout(() => {
-    setResult(false)
-  }, 3000);
+  // setTimeout(() => {
+  //   setResult(false)
+  // }, 3000);
   return (
     <div className="contact">
       <div className="container-2">
@@ -72,8 +76,17 @@ const ContactContent = () => {
                 <button className="btn">
                   Send <i class="bx bxs-paper-plane"></i>
                 </button>
+                <ToastContainer
+                  toastStyle={{
+                    backgroundColor: "black",
+                    color: "white",
+                    border: "1px solid white",
+                  }}
+                  icon={<i class="bx bxs-check-circle"></i>}
+                  progressStyle={{backgroundColor: "white"}}
+                />
               </div>
-              <div>{result ? <Result /> : null}</div>
+              {/* <div>{result ? <Result /> : null}</div> */}
             </form>
           </div>
           <div className="contact-box-2">
