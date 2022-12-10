@@ -43,7 +43,10 @@ const AboutContent = () => {
           <Link to="/contact">
             <button className="btn">Contact Me</button>
           </Link>
-          <a href="CHINEDU CV.pdf" download="Chinedu CHINEDU CV.pdf">
+          <a
+            href="EGU CHINEDU CV.docx.pdf"
+            download="Chinedu EGU CHINEDU CV.docx.pdf"
+          >
             <button className="btn">
               Download CV <i class="bx bx-file-blank"></i>
             </button>
