@@ -59,25 +59,42 @@ const Skills = () => {
 
             <div className="skill-text">
               <h3 className="skills-name">Firebase</h3>
-              <p className="skills-level">Basic</p>
+              <p className="skills-level">Intermediate</p>
             </div>
           </div>
           <div className="skills-group">
             <i className="bx bxs-badge-check"></i>
 
             <div className="skill-text">
-              <h3 className="skills-name">Typescript</h3>
-              <p className="skills-level">Basic</p>
+              <h3 className="skills-name">Bootstrap</h3>
+              <p className="skills-level">Intermediate</p>
             </div>
           </div>
           <div className="skills-group">
             <i className="bx bxs-badge-check"></i>
 
             <div className="skill-text">
-              <h3 className="skills-name">React.Ts</h3>
+              <h3 className="skills-name">Angular TS</h3>
+              <p className="skills-level">Intermediate</p>
+            </div>
+          </div>
+          <div className="skills-group">
+            <i className="bx bxs-badge-check"></i>
+
+            <div className="skill-text">
+              <h3 className="skills-name">Angular Materials</h3>
+              <p className="skills-level">Intermediate</p>
+            </div>
+          </div>
+          <div className="skills-group">
+            <i className="bx bxs-badge-check"></i>
+
+            <div className="skill-text">
+              <h3 className="skills-name">C# Dot Net.</h3>
               <p className="skills-level">Basic</p>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

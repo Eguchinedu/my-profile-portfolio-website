@@ -1,54 +1,34 @@
-import apextalents from "../assets/apextalents.png"
-import calculator from "../assets/calculator.png"
-import food from "../assets/food-site.png"
-import phonie from "../assets/phonie.png"
-import portfolio from "../assets/portfolio-fetch.png"
-import store from "../assets/store-website.png"
-import travel from "../assets/travel.png"
+
+import ecommerce from "../assets/Ecommerce-site.png"
+import imprinno from "../assets/imprinno.png"
+import moniepass from "../assets/moniepassweb.png"
+import geegpay from "../assets/geegpay.png"
 
 
 const ProjectCardData = [
   {
-    imgsrc: phonie,
-    title: "Cloud-278-phonie",
-    text: "The form created in this page detects the carrier of the number provided and displays the logo. this is created using HTML, CSS and Javascript",
-    view: "https://cloud-278-phonie.repl.co/",
+    imgsrc: ecommerce,
+    title: "Ecommerce Website",
+    text: "This is a e-commerce landing page i created using reactjs, and hosted using firebase. i also incorporated an add to cart function",
+    view: "https://ecommerce-site-e3d7a.web.app/",
   },
   {
-    imgsrc: calculator,
-    title: "React Calculator",
-    text: "This fully functional calculator was created using React.js. it accepts inputs and displays the results ",
-    view: "https://q2m5tc.csb.app/",
+    imgsrc: imprinno,
+    title: "Imprinno Website",
+    text: "This is the official page of Imprinno Company created using Angular with typescript",
+    view: "https://imprinno.com",
   },
   {
-    imgsrc: apextalents,
-    title: "ApexTalents",
-    text: "This is a tech recruitment website i created with Word Press While working with ApexTalents, also with my Knowledge of HTML and CSS",
-    view: "http://apextalents.net/",
+    imgsrc: moniepass,
+    title: "Moniepass Website",
+    text: "This is the landing page for Moniepass, an upcoming escrow application built with Angular with typescript using angular materials with bootstrap.",
+    view: "https://moniepaanding.web.app/home",
   },
   {
-    imgsrc: food,
-    title: "Food Site",
-    text: "This was created with vanilla html and css 3 months in a coding boot camp by me in collaboration with my collegues, i created the home page while they worked on the rest.",
-    view: "https://food-site-page.chineduegu.repl.co/",
-  },
-  {
-    imgsrc: portfolio,
-    title: "Github-Profile-Fetch",
-    text: "This was created Using React.js, it fetches my github profile and repos, also contains error boundary and 404 page.",
-    view: "https://github-portfolio-fetch.web.app/",
-  },
-  {
-    imgsrc: store,
-    title: "Store Website",
-    text: "This is a prototype e-commerce website that i created using HTML, CSS and Javascript",
-    view: "https://store-website.chineduegu.repl.co/",
-  },
-  {
-    imgsrc: travel,
-    title: "Travel Website",
-    text: "This is a simple prototype Travel website that i created using React.js.",
-    view: "https://travel-website-8600a.web.app",
+    imgsrc: geegpay,
+    title: "Dashboard",
+    text: "This dashboard, built using Angular, features both light and dark modes. It was created as part of a challenge presented by Geegpay, where we were tasked with developing a straightforward dashboard based solely on the provided landing page design.",
+    view: "https://geegpay-dashboard.web.app/dashboard",
   },
 ];
 

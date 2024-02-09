@@ -36,17 +36,18 @@ const AboutContent = () => {
         </div>
         <h1>Who am i?</h1>
         <p>
-          I'm a React.js Frontend developer.I love to create beautiful and
-          responsive working websites/applications.
+          As an Angular and React.js front-end developer, I thrive on
+          translating creative visions into captivating user interfaces. My
+          expertise extends to ensuring not just aesthetic appeal, but also
+          optimal functionality and responsiveness. Leveraging the power of
+          these frameworks, I am dedicated to delivering seamless user
+          experiences across various platforms.
         </p>
         <div className="about-button">
           <Link to="/contact">
             <button className="btn">Contact Me</button>
           </Link>
-          <a
-            href="EGU CHINEDU CV.docx.pdf"
-            download="Chinedu EGU CHINEDU CV.docx.pdf"
-          >
+          <a href="EGU CHINEDU CV.pdf" download="Chinedu EGU CHINEDU CV.pdf">
             <button className="btn">
               Download CV <i class="bx bx-file-blank"></i>
             </button>

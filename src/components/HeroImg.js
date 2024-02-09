@@ -21,6 +21,8 @@ const HeroImg = () => {
                 1000,
                 "React.Js Dev 💻",
                 1000,
+                "Angular.Ts Dev 💻",
+                1000,
               ]}
             />{" "}
           </h2>
